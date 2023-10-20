@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlusere">
+   <children>
+      <TextField fx:id="text_exemple_e" layoutX="231.0" layoutY="379.0" promptText="exemple" />
+      <TextField fx:id="text_traduction" layoutX="231.0" layoutY="286.0" promptText="traduction" />
+      <TextField fx:id="text_id" layoutX="231.0" layoutY="197.0" promptText="id_word" />
+      <TextField fx:id="text_exemple_f" layoutX="585.0" layoutY="379.0" promptText="exemple" />
+      <TextField fx:id="text_type" layoutX="585.0" layoutY="286.0" promptText="type" />
+      <TextField fx:id="text_word" layoutX="585.0" layoutY="197.0" promptText="word" />
+      <TextField fx:id="ser" layoutX="411.0" layoutY="125.0" onKeyReleased="#search" promptText="search" />
+      <AnchorPane layoutY="4.0" prefHeight="463.0" prefWidth="205.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutY="-13.0" prefHeight="103.0" prefWidth="205.0" style="-fx-background-color: #19283f;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-13.0" />
+            <Label layoutX="21.0" layoutY="142.0" text="Change Language" textFill="#19283f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="next" layoutX="59.0" layoutY="205.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: #19283f;" text="French" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="close" layoutX="41.0" layoutY="390.0" mnemonicParsing="false" onAction="#onclose" style="-fx-background-color: #19283f;" text="Se Deconnecter" textFill="#fcf9f9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="205.0" layoutY="-2.0" prefHeight="96.0" prefWidth="617.0" style="-fx-background-color: #19283f;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="113.0" layoutY="6.0" prefHeight="70.0" prefWidth="300.0" text="  User  Space" textFill="#fffbfb">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

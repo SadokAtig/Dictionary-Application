@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maincontrolf">
+   <children>
+      <Button fx:id="delete" layoutX="613.0" layoutY="307.0" mnemonicParsing="false" onAction="#del" style="-fx-background-color: #19283f;" text="delete" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="clear" layoutX="420.0" layoutY="307.0" mnemonicParsing="false" onAction="#clear" style="-fx-background-color: #19283f;" text="clear" textFill="#fffafa">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="updat" layoutX="779.0" layoutY="305.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #19283f;" text="update" textFill="#fcf9f9">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="205.0" layoutY="353.0" onMouseClicked="#get" prefHeight="214.0" prefWidth="691.0">
+        <columns>
+          <TableColumn fx:id="idwordf" prefWidth="75.0" text="idword" />
+          <TableColumn fx:id="wordf" prefWidth="82.0" text="word" />
+            <TableColumn fx:id="traductionf" prefWidth="107.0" text="traduction" />
+            <TableColumn fx:id="typef" prefWidth="83.0" text="type" />
+            <TableColumn fx:id="exemplef" prefWidth="160.0" text="exemple" />
+            <TableColumn fx:id="exemple" prefWidth="183.0" text="exemple" />
+        </columns>
+      </TableView>
+      <TextField fx:id="text_idf" layoutX="224.0" layoutY="135.0" promptText="id_word" />
+      <TextField fx:id="text_wordf" layoutX="446.0" layoutY="135.0" promptText="word" />
+      <TextField fx:id="text_traductionf" layoutX="704.0" layoutY="135.0" promptText="traduction" />
+      <TextField fx:id="text_typef" layoutX="224.0" layoutY="235.0" promptText="type" />
+      <TextField fx:id="text_exemplef" layoutX="446.0" layoutY="235.0" promptText="exemple" />
+      <TextField fx:id="text_exemplee" layoutX="704.0" layoutY="235.0" promptText="exemple" />
+      <AnchorPane layoutY="5.0" prefHeight="572.0" prefWidth="195.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutY="-13.0" prefHeight="100.0" prefWidth="195.0" style="-fx-background-color: #19283f;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-13.0" />
+            <Label layoutX="26.0" layoutY="156.0" text="Change Language" textFill="#19283f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="close" layoutX="28.0" layoutY="507.0" mnemonicParsing="false" onAction="#onclose" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #19283f;" text="Se Déconnecter" textFill="#fff9f9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="move" layoutX="62.0" layoutY="226.0" mnemonicParsing="false" onAction="#move" style="-fx-background-color: #19283f;" text="English" textFill="#f8f7f7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="192.0" prefHeight="94.0" prefWidth="717.0" style="-fx-background-color: #19283f;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="113.0" layoutY="12.0" prefHeight="70.0" prefWidth="345.0" text="Admin Space" textFill="#fffbfb">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="add_data" layoutX="242.0" layoutY="305.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #19283f;" text="insert" textFill="#ebe8e8">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

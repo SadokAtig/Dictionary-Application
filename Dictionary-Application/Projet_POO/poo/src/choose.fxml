@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="747.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="506.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@t.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="168.0" layoutX="44.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@distribution.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="98.0" prefWidth="747.0" style="-fx-background-color: #218eee;" />
+      <VBox layoutX="-3.0" layoutY="319.0" prefHeight="85.0" prefWidth="754.0" style="-fx-background-color: #218eee;" />
+      <Button fx:id="Admin" layoutX="565.0" layoutY="272.0" mnemonicParsing="false" onAction="#onadmin" prefHeight="28.0" prefWidth="83.0" style="-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 ); -fx-font-family: &quot;Arial Narrow&quot;; -fx-text-fill: black; -fx-background-insets: 0,1,1; -fx-background-color: #c3c4c4,            linear-gradient(#d6d6d6 50%, white 100%),            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%); -fx-background-radius: 30;" text="Admin" textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ex" layoutX="53.0" layoutY="272.0" mnemonicParsing="false" onAction="#onex" prefHeight="33.0" prefWidth="132.0" style="-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 ); -fx-font-family: &quot;Arial Narrow&quot;; -fx-text-fill: black; -fx-background-insets: 0,1,1; -fx-background-color: #c3c4c4,            linear-gradient(#d6d6d6 50%, white 100%),            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%); -fx-background-radius: 30;" text="Import/Export" textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="user" layoutX="309.0" layoutY="273.0" mnemonicParsing="false" onAction="#onuser" prefHeight="28.0" prefWidth="83.0" style="-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 ); -fx-font-family: &quot;Arial Narrow&quot;; -fx-text-fill: black; -fx-background-insets: 0,1,1; -fx-background-color: #c3c4c4,            linear-gradient(#d6d6d6 50%, white 100%),            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%); -fx-background-radius: 30;" text="User" textFill="#fcfafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

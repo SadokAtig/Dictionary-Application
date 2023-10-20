@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="1111.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="export_importfrensh">
+   <children>
+      <TableView fx:id="jTableExport" layoutX="239.0" layoutY="197.0" prefHeight="234.0" prefWidth="453.0">
+        <columns>
+          <TableColumn fx:id="idwordf" prefWidth="75.0" text="Id_word" />
+          <TableColumn fx:id="wordf" prefWidth="75.0" text="word" />
+            <TableColumn fx:id="traductionf" prefWidth="75.0" text="traduction" />
+            <TableColumn fx:id="typef" prefWidth="113.0" text="type" />
+            <TableColumn fx:id="exemplef" prefWidth="114.0" text="exemple" />
+        </columns>
+      </TableView>
+      <Button fx:id="export_data" layoutX="880.0" layoutY="134.0" mnemonicParsing="false" onAction="#export" style="-fx-background-color: #19283f;" text="export" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="import_data" layoutX="389.0" layoutY="134.0" mnemonicParsing="false" onAction="#impor" style="-fx-background-color: #19283f;" text="import" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="text" layoutX="723.0" layoutY="207.0" prefHeight="216.0" prefWidth="365.0" />
+      <AnchorPane layoutY="-4.0" prefHeight="503.0" prefWidth="195.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutY="-13.0" prefHeight="100.0" prefWidth="195.0" style="-fx-background-color: #19283f;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-13.0" />
+            <Label layoutX="40.0" layoutY="134.0" prefHeight="31.0" prefWidth="118.0" text="Import/Export" textFill="#19283f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="close" layoutX="32.0" layoutY="376.0" mnemonicParsing="false" onAction="#onclose" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #19283f;" text="Se Déconnecter" textFill="#fff9f9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="lis" layoutX="65.0" layoutY="205.0" mnemonicParsing="false" onAction="#onlist" style="-fx-background-color: #19283f;" text="Listage" textFill="#f8f6f6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="194.0" prefHeight="84.0" prefWidth="919.0" style="-fx-background-color: #19283f;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="268.0" layoutY="7.0" prefHeight="70.0" prefWidth="345.0" text="Admin Space" textFill="#fffbfb">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+book,livre,noun,j'ai_un_livre,j'ai_un_livre,
+good_morning,bonjour,noun,bonjour_maman,bonjour_maman,

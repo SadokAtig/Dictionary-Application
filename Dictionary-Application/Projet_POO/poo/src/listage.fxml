@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liste">
+   <children>
+      <TextField fx:id="nbr" layoutX="83.0" layoutY="168.0" prefHeight="25.0" prefWidth="54.0" promptText="nbr" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #19283f;" />
+      <RadioButton fx:id="btn1" layoutX="316.0" layoutY="160.0" mnemonicParsing="false" onAction="#bt1check" text="Frensh" />
+      <RadioButton fx:id="btn2" layoutX="315.0" layoutY="206.0" mnemonicParsing="false" onAction="#bt2check" text="English" />
+      <TextField fx:id="fitragetext" layoutX="201.0" layoutY="283.0" onAction="#filtrage" promptText="Search" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #19283f;" />
+      <TableView fx:id="jTable" layoutX="-1.0" layoutY="353.0" onMouseClicked="#select" prefHeight="240.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="word" prefWidth="95.0" text="Word_E" />
+          <TableColumn fx:id="mot" prefWidth="104.0" text="Mot_F" />
+            <TableColumn fx:id="type" prefWidth="104.0" text="Type_E" />
+            <TableColumn fx:id="expE" prefWidth="141.0" text="Expl_E" />
+            <TableColumn fx:id="expF" prefWidth="147.0" text="Expl_F" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" prefHeight="125.0" prefWidth="592.0" style="-fx-background-color: #19283f;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Listage" textFill="#f8f6f6">
+               <font>
+                  <Font size="75.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
